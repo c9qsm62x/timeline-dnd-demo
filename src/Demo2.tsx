@@ -156,7 +156,7 @@ function DemoTwo() {
         </Timeline>
       </DragProvider>
       <Table data={data as RowProps[]}>
-        <TableColumn field="state">Sate</TableColumn>
+        <TableColumn field="state">State</TableColumn>
         <TableColumn field="rowName">Row Name</TableColumn>
         <TableColumn field="start">Start</TableColumn>
         <TableColumn field="end">End</TableColumn>
