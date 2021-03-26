@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/timeline-dnd-demo/static/css/main.2974c4f6.chunk.css",
-    "main.js": "/timeline-dnd-demo/static/js/main.4877f889.chunk.js",
-    "main.js.map": "/timeline-dnd-demo/static/js/main.4877f889.chunk.js.map",
+    "main.js": "/timeline-dnd-demo/static/js/main.d8a7e2d9.chunk.js",
+    "main.js.map": "/timeline-dnd-demo/static/js/main.d8a7e2d9.chunk.js.map",
     "runtime-main.js": "/timeline-dnd-demo/static/js/runtime-main.9c8d1ea9.js",
     "runtime-main.js.map": "/timeline-dnd-demo/static/js/runtime-main.9c8d1ea9.js.map",
     "static/css/2.8017590b.chunk.css": "/timeline-dnd-demo/static/css/2.8017590b.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.8017590b.chunk.css",
     "static/js/2.c34cf11a.chunk.js",
     "static/css/main.2974c4f6.chunk.css",
-    "static/js/main.4877f889.chunk.js"
+    "static/js/main.d8a7e2d9.chunk.js"
   ]
 }
