@@ -15,14 +15,14 @@ This also setup the context so Event and Row can notify the DragContext on the e
 The onDrop event to perform the data manipulation. 
 ```tsx 
 <DragProvider onDrop={setState}>
-     <Timeline
-          range={6}
-          hasSide
-          startDate={new Date(2020, 3, 1)}
-          today={new Date(2020, 3, 15)}
-        >
-        {/* Timeline components */}
-    </Timeline>
+  <Timeline
+      range={6}
+      hasSide
+      startDate={new Date(2020, 3, 1)}
+      today={new Date(2020, 3, 15)}
+    >
+    {/* Timeline components */}
+</Timeline>
 </DragProvider>
 
 ```
@@ -38,7 +38,7 @@ type DragRowProps = {
 } & TimelineRowProps;
 
 <DragTimelineRow name="Row 1" extraData={{}}>
-     <TimelineEvents />
+  <TimelineEvents />
 </DragTimelineRow>
 
 ```
@@ -67,35 +67,35 @@ type DragTimelineEventProps = {
 };
 
 <TimelineEvent
-                  startDate={new Date(2020, 3, 6)}
-                  endDate={new Date(2020, 3, 10)}
-                  render={(
-                    startDate: Date,
-                    endDate: Date,
-                    widthPx: string,
-                    offsetPx: string
-                  ) => {
-                    return (
-                      <DragTimelineEvent
-                        timelineProps={{
-                          startDate,
-                          endDate,
-                          widthPx,
-                          offsetPx,
-                        }}
-                        style={{
-                          position: "absolute",
-                          top: "50%",
-                          transform: "translateY(-50%)",
-                          backgroundColor: "black",
-                          color: "white",
-                        }}
-                      >
-                        {(active: boolean) => <div>Event 1</div>}
-                      </DragTimelineEvent>
-                    );
-                  }}
-                />
+  startDate={new Date(2020, 3, 6)}
+  endDate={new Date(2020, 3, 10)}
+  render={(
+    startDate: Date,
+    endDate: Date,
+    widthPx: string,
+    offsetPx: string
+  ) => {
+    return (
+      <DragTimelineEvent
+        timelineProps={{
+          startDate,
+          endDate,
+          widthPx,
+          offsetPx,
+        }}
+        style={{
+          position: "absolute",
+          top: "50%",
+          transform: "translateY(-50%)",
+          backgroundColor: "black",
+          color: "white",
+        }}
+      >
+        {(active: boolean) => <div>Event 1</div>}
+      </DragTimelineEvent>
+    );
+  }}
+/>
 
 ```
 
@@ -104,22 +104,22 @@ The Drag Timeline `<DragTimeline />` component that calculates the the day selec
 If the class is removed this is not possible. 
 ```tsx 
 
-  <DragProvider onDrop={setState}>
-        <Timeline
-          range={6}
-          hasSide
-          startDate={new Date(2020, 3, 1)}
-          today={new Date(2020, 3, 15)}
-        >
-          <DragTimeline />
-          <TimelineTodayMarker />
-          <TimelineMonths />
-          <TimelineWeeks />
-          <TimelineDays />
-          <TimelineRows>
-          <TimelineRow>{}</TimelineRow>
-          </TimelineRows>
-          </Timeline>
+<DragProvider onDrop={setState}>
+    <Timeline
+      range={6}
+      hasSide
+      startDate={new Date(2020, 3, 1)}
+      today={new Date(2020, 3, 15)}
+    >
+      <DragTimeline />
+      <TimelineTodayMarker />
+      <TimelineMonths />
+      <TimelineWeeks />
+      <TimelineDays />
+      <TimelineRows>
+      <TimelineRow>{}</TimelineRow>
+      </TimelineRows>
+      </Timeline>
 </DragProvider>
 
 ```
