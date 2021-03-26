@@ -101,7 +101,8 @@ type DragTimelineEventProps = {
 
 ### Drag Timeline 
 The Drag Timeline `<DragTimeline />` component that calculates the the day selection using the Timeline context and `.timeline_inner`  element 
-If the class is removed this is not possible. 
+The DragTimeline relies on the `.timeline_inner` being present. It would be good if this could be targeted with a ref. 
+At the moment we target it using `document.querySelector('.timeline_inner')` which is a ant pattern.
 ```tsx 
 
 <DragProvider onDrop={setState}>
