@@ -99,11 +99,11 @@ const DragTimeline: React.FC<{ timelineClassName?: string }> = ({
   }
   let text = "";
   if (position && isDragging) {
-    const relativeX =
+    const absoluteX =
       position.left -
       timelineInner.current.rect!.x +
       (timelineInner.current.element?.scrollLeft || 0);
-    const dayInYear = Math.floor(relativeX / currentScaleOption.widths.day);
+    const dayInYear = Math.floor(absoluteX / currentScaleOption.widths.day);
     const destinationDate = calculateDate(
       dayInYear,
       data!.startDate,
